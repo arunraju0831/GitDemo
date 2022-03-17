@@ -1,7 +1,9 @@
 from selenium import webdriver
 import time
+
 # Invokes chromedriver.exe file for invoking websites
-driver = webdriver.Chrome(executable_path="C:\\Users\\arunraju.m\\Softwares\\chromedriver_win32\\chromedriver.exe")
+driver = webdriver.Chrome(executable_path="C:\\Users\\arunraju.m\\Softwares\\chromedriver_win32\\chromedriver.exe")#OLD METHOD
+
 driver.get("http://www.solsavi.in")  # Enters Solsavi website
 driver.find_element_by_id("grad1").click()  # Clicks Get Started button
 driver.find_element_by_id("example-text-input").send_keys("600088")  # Enters pincode
